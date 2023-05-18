@@ -1,0 +1,114 @@
+.main-draggable-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-draggable-element {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.draggeble-elements {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.draggable-element-title {
+  width: 140px;
+  height: 40px;
+  border: 2px #b1c7d2 dashed;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.draggable-element-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  background-color: #b1c7d2;
+  color: #fff;
+  border-radius: 50%;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.draggable-element-button.cancel {
+  background-color: orange;
+  color: #fff;
+}
+
+.draggable-element-button.save {
+  background-color: green;
+  color: #fff;
+}
+
+.draggable-element-button.delete {
+  background-color: red;
+  color: #fff;
+}
+
+input {
+  width: 130px;
+  height: 40px;
+  border: 1px #b1c7d2 solid;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0 10px;
+  outline: none;
+}
+
+.saved-element {
+  background-color: #ffaf82;
+  color: #fff;
+  border: 0px #b1c7d2 solid;
+}
+
+.saved-sub-element {
+  background-color: #1dbbdc;
+  color: #fff;
+  border: 0px #b1c7d2 solid;
+}
+
+.add-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px;
+}
+
+.draggable-sub-elements {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.draggable-sub-element {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.new-sub-elements {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}

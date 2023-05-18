@@ -1,0 +1,67 @@
+.scrollable-area {
+  width: 100%;
+  height: calc(100vh - 60px);
+  position: relative;
+  background-color: #F8F8F8;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(0, 0);
+  transition: transform 0.3s ease-in-out;
+  user-select: none;
+}
+
+.draggable {
+  position: absolute;
+  top: 60px;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+  cursor: move;
+}
+
+.arrow-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 120px;
+  background-color: #b1c7d2;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+
+.arrow-container.left {
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+}
+
+.arrow-container.right {
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+}
+
+.arrow-container.top {
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 40px;
+}
+
+.arrow-container.bottom {
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 40px;
+}
